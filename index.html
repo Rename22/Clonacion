@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Negocio Efectivo | Plataforma de Recargas</title>
+    <link rel="icon" type="image/png" href="assets/icon/favicon.ico">
+
+    <!-- Incluir Bootstrap Icons (para el ícono del ojo) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        background-image: url('assets/get-login-background.jpg'); /* Cambia 'ruta/a/tu/imagen.jpg' a la ruta de tu imagen */
+        background-size: cover; /* Para que la imagen cubra toda la pantalla */
+            background-position: center 1%; /* Mueve la imagen un 20% hacia abajo */
+            background-repeat: no-repeat; /* Evitar que la imagen se repita */
+            height:  110vh; /* Asegurarse de que el fondo ocupe toda la altura de la ventana */
+            margin: 0; /* Eliminar márgenes predeterminados */
+    }
+    /* Contenedor para el logo */
+    .logo-container {
+            max-width: 100%;
+            display: flex;
+            justify-content: center; /* Centra el logo horizontalmente */
+            padding-top: 52px; /* Espacio hacia la parte superior */
+        }           
+
+    .logo-container img {
+        max-width: 202px; /* Se ajusta al tamaño del contenedor */
+        height: auto;
+    }
+    /* Contenedor del formulario */
+    .form-container {
+            max-width: 25%;
+            max-height: 60%;
+            padding: 4%;
+            background-color: rgba(150, 143, 181, 0.5); /* Fondo azul con transparencia */
+            
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: white;
+            margin-left: 510px;
+            margin-top: 49px;
+        }
+        .form-container h6 {
+            text-align: center;
+            color: rgb(218, 215, 215);
+            font-size: 14px;
+            margin: 5px;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: white;
+            margin: 5px;
+            font-size: 19px;
+        }
+        .recuperar{
+            display: block;
+            text-align: center; /* Centra el enlace */
+            color: white;
+            font-size: 16px;
+            margin-top: 10px;
+
+        }
+
+
+
+
+
+
+        .password-container {
+    position: relative;
+    width: 100%; /* Ancho completo para el campo de entrada */
+    max-width: 400px; /* Puedes ajustar el tamaño máximo si es necesario */
+    margin-top: 10px;
+}
+.password-container input[type="password"] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px 40px; /* Espacio a la izquierda y derecha para el ícono */
+    border-radius: 30px;
+    font-size: 14px;
+    border: 2px solid #ccc; /* Estilo de borde */
+    box-sizing: border-box;
+    margin-top: 10px;
+    height: 100%; /* Asegura que el campo ocupe toda la altura del contenedor */
+}
+
+.form-container input[type="text"] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px 40px; /* Espacio a la izquierda y derecha para el ícono */
+    border-radius: 30px;
+    font-size: 14px;
+    border: 2px solid #ccc; /* Estilo de borde */
+    box-sizing: border-box;
+    height: 100%; /* Asegura que el campo ocupe toda la altura del contenedor */
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    right: 10px; /* Espacio desde el borde derecho */
+    transform: translateY(-50%); /* Alineación exacta al centro */
+    cursor: pointer;
+    color: #333;
+}
+
+
+
+
+        /* Estilo del botón */
+        .form-container .btn-entrar {
+            width: 34%;
+            padding: 12px;
+            background-color: #9e3a3e; /* Botón verde */
+            color: white;
+            border: none;
+            display: block; /* Hace que el botón se comporte como un bloque */
+            margin: 0 auto; /* Centra el botón dentro del contenedor */
+            text-align: center; /* Alinea el texto dentro del botón */
+            border-radius: 30px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 12px;
+        }
+        /* Estilo del texto */
+        .form-container label {
+            font-size: 14px;
+            color: #00796b;
+            margin-bottom: 5px;
+        }
+
+        /* Ajustes para pantalla pequeña */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 15px;
+            }
+        }
+
+        .botones-win-and{
+            display: flex;
+            gap: 50px;
+        }
+        /* Estilo del botón */
+        .btn-con-imagen {
+            width: 170px;
+            height: 65px;
+            padding-right: 22px;
+            background-color: #444286; /* Color de fondo */
+            color: white;
+            border: none;
+            display: flex; /* Usamos flex para alinear imagen y texto */
+            justify-content: center; /* Centra horizontalmente el contenido */
+            align-items: center; /* Centra verticalmente el contenido */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            gap: 10px; /* Espacio entre la imagen y el texto */
+            margin-top: 40px;
+        }
+
+        .btn-con-imagen .btn-icon {
+            width: 25%; /* Tamaño de la imagen */
+            /* Tamaño de la imagen */
+        }
+
+        .btn-con-imagen .btn-text {
+            font-size: 14px; /* Ajusta el tamaño del texto si es necesario */
+            text-align: right;
+            color: white;
+        }
+</style>
+<body>
+    <!-- Contenedor del logo -->
+    <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo de Mi Negocio Efectivo">
+    </div>
+    <div class="form-container">
+        <h2>ACCEDER A LA PLATAFORMA</h2>
+        <h6>ACREDITACIONES</h6>
+        <h6>Las 24 horas del día, los 7 días de la semana</h6>
+        <form action="login.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Usuario" required>
+            <a class="recuperar">¿Ha olvidado su usuario?</a>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Contraseña" required><br>
+                <!-- Icono de ojo usando Bootstrap Icons -->
+                <i class="bi bi-eye-slash eye-icon" id="togglePassword"></i>
+            </div>
+            <a class="recuperar">¿Ha olvidado su contraseña?</a>
+            <br>
+            <button class="btn-entrar" type="submit">Entrar</button>
+            <div class="botones-win-and">
+                <button class="btn-con-imagen">
+                    <span class="btn-text">Versión para Android</span>
+                    <img src="assets/android.png" alt="icono" class="btn-icon">
+                </button>
+                <button class="btn-con-imagen">
+                    <span class="btn-text">Versión para Windows</span>
+                    <img src="assets/windows.png" alt="icono" class="btn-icon">
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        // Obtener el ícono y el campo de contraseña
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordField = document.getElementById('password');
+
+        // Cambiar el tipo de input al hacer clic en el ícono
+        togglePassword.addEventListener('click', function() {
+            // Alternar entre tipo 'password' y 'text'
+            const type = passwordField.type === 'password' ? 'text' : 'password';
+            passwordField.type = type;
+
+            // Alternar los íconos
+            if (type === 'password') {
+                togglePassword.classList.remove('bi-eye');
+                togglePassword.classList.add('bi-eye-slash'); // Ojo cerrado
+            } else {
+                togglePassword.classList.remove('bi-eye-slash');
+                togglePassword.classList.add('bi-eye'); // Ojo abierto
+            }
+        });
+    </script>
+</body>
+</html>
