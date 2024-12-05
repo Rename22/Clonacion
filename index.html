@@ -12,19 +12,18 @@
 </head>
 <style>
     body {
-        background-image: url('assets/get-login-background.jpg'); /* Cambia 'ruta/a/tu/imagen.jpg' a la ruta de tu imagen */
         background-size: cover; /* Para que la imagen cubra toda la pantalla */
-            background-position: center 1%; /* Mueve la imagen un 20% hacia abajo */
-            background-repeat: no-repeat; /* Evitar que la imagen se repita */
-            height:  110vh; /* Asegurarse de que el fondo ocupe toda la altura de la ventana */
-            margin: 0; /* Eliminar márgenes predeterminados */
+        background-position: center 1%; /* Mueve la imagen un 20% hacia abajo */
+        background-repeat: no-repeat; /* Evitar que la imagen se repita */
+        height:  110vh; /* Asegurarse de que el fondo ocupe toda la altura de la ventana */
+        margin: 0; /* Eliminar márgenes predeterminados */
     }
     /* Contenedor para el logo */
     .logo-container {
-            max-width: 100%;
-            display: flex;
-            justify-content: center; /* Centra el logo horizontalmente */
-            padding-top: 52px; /* Espacio hacia la parte superior */
+        max-width: 100%;
+        display: flex;
+        justify-content: center; /* Centra el logo horizontalmente */
+        padding-top: 52px; /* Espacio hacia la parte superior */
         }           
 
     .logo-container img {
@@ -33,145 +32,141 @@
     }
     /* Contenedor del formulario */
     .form-container {
-            max-width: 25%;
-            max-height: 60%;
-            padding: 4%;
-            background-color: rgba(150, 143, 181, 0.5); /* Fondo azul con transparencia */
+        max-width: 25%;
+        max-height: 60%;
+        padding: 4%;
+        background-color: rgba(150, 143, 181, 0.5); /* Fondo azul con transparencia */
             
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            color: white;
-            margin-left: 510px;
-            margin-top: 49px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        color: white;
+        margin-left: 510px;
+        margin-top: 49px;
         }
-        .form-container h6 {
-            text-align: center;
-            color: rgb(218, 215, 215);
-            font-size: 14px;
-            margin: 5px;
+    .form-container h6 {
+        text-align: center;
+        color: rgb(218, 215, 215);
+        font-size: 14px;
+        margin: 5px;
         }
-        .form-container h2 {
-            text-align: center;
-            color: white;
-            margin: 5px;
-            font-size: 19px;
+    .form-container h2 {
+        text-align: center;
+        color: white;
+        margin: 5px;
+        font-size: 19px;
         }
-        .recuperar{
-            display: block;
-            text-align: center; /* Centra el enlace */
-            color: white;
-            font-size: 16px;
-            margin-top: 10px;
+        
+    .recuperar{
+        display: block;
+        text-align: center; /* Centra el enlace */
+        color: white;
+        font-size: 16px;
+        margin-top: 10px;
 
         }
 
 
 
 
-
-
-        .password-container {
-    position: relative;
-    width: 100%; /* Ancho completo para el campo de entrada */
-    max-width: 400px; /* Puedes ajustar el tamaño máximo si es necesario */
-    margin-top: 10px;
-}
-.password-container input[type="password"] {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 12px 40px; /* Espacio a la izquierda y derecha para el ícono */
-    border-radius: 30px;
-    font-size: 14px;
-    border: 2px solid #ccc; /* Estilo de borde */
-    box-sizing: border-box;
-    margin-top: 10px;
-    height: 100%; /* Asegura que el campo ocupe toda la altura del contenedor */
-}
-
-.form-container input[type="text"] {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 12px 40px; /* Espacio a la izquierda y derecha para el ícono */
-    border-radius: 30px;
-    font-size: 14px;
-    border: 2px solid #ccc; /* Estilo de borde */
-    box-sizing: border-box;
-    height: 100%; /* Asegura que el campo ocupe toda la altura del contenedor */
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-.eye-icon {
-    position: absolute;
-    top: 50%; /* Centrado verticalmente */
-    right: 10px; /* Espacio desde el borde derecho */
-    transform: translateY(-50%); /* Alineación exacta al centro */
-    cursor: pointer;
-    color: #333;
-}
-
-
-
-
-        /* Estilo del botón */
-        .form-container .btn-entrar {
-            width: 34%;
-            padding: 12px;
-            background-color: #9e3a3e; /* Botón verde */
-            color: white;
-            border: none;
-            display: block; /* Hace que el botón se comporte como un bloque */
-            margin: 0 auto; /* Centra el botón dentro del contenedor */
-            text-align: center; /* Alinea el texto dentro del botón */
-            border-radius: 30px;
-            font-size: 13px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin-top: 12px;
+    .password-container {
+        position: relative;
+        width: 100%; /* Ancho completo para el campo de entrada */
+        max-width: 400px; /* Puedes ajustar el tamaño máximo si es necesario */
+        margin-top: 10px;
+        height: 50px; /* Asegura que la altura del contenedor sea fija */
         }
+    .form-container input[type="text"]{
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 10px 40px; /* Espacio a la izquierda y derecha para el ícono */
+        border-radius: 30px;
+        font-size: 14px;
+        border: 2px solid #ccc; /* Estilo de borde */
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    .password-container input[type="password"] {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 10px 40px; /* Espacio a la izquierda y derecha para el ícono */
+        border-radius: 30px;
+        font-size: 14px;
+        border: 2px solid #ccc; /* Estilo de borde */
+        box-sizing: border-box;
+        height: 100%; /* Asegura que el campo ocupe toda la altura del contenedor */
+    }
+
+    .eye-icon {
+        position: absolute;
+        top: 50%; /* Centrado verticalmente */
+        right: 10px; /* Espacio desde el borde derecho */
+        transform: translateY(-50%); /* Alineación exacta al centro */
+        cursor: pointer;
+        color: #333;
+    }
+
+  /* Estilo del botón */
+  .form-container .btn-entrar {
+        width: 34%;
+        padding: 12px;
+        background-color: #9e3a3e; /* Botón verde */
+        color: white;
+        border: none;
+        display: block; /* Hace que el botón se comporte como un bloque */
+        margin: 0 auto; /* Centra el botón dentro del contenedor */
+        text-align: center; /* Alinea el texto dentro del botón */
+        border-radius: 30px;
+        font-size: 13px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 12px;
+    }
         /* Estilo del texto */
-        .form-container label {
-            font-size: 14px;
-            color: #00796b;
-            margin-bottom: 5px;
-        }
+    .form-container label {
+        font-size: 14px;
+        color: #00796b;
+        margin-bottom: 5px;
+    }
 
         /* Ajustes para pantalla pequeña */
-        @media (max-width: 600px) {
-            .form-container {
-                padding: 15px;
-            }
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 15px;
         }
+    }   
 
-        .botones-win-and{
-            display: flex;
-            gap: 50px;
-        }
+       
+
+    .botones-win-and{
+        display: flex;
+        gap: 50px;
+    }
         /* Estilo del botón */
-        .btn-con-imagen {
-            width: 170px;
-            height: 65px;
-            padding-right: 22px;
-            background-color: #444286; /* Color de fondo */
-            color: white;
-            border: none;
-            display: flex; /* Usamos flex para alinear imagen y texto */
-            justify-content: center; /* Centra horizontalmente el contenido */
-            align-items: center; /* Centra verticalmente el contenido */
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            gap: 10px; /* Espacio entre la imagen y el texto */
-            margin-top: 40px;
-        }
+    .btn-con-imagen {
+        width: 170px;
+        height: 65px;
+        padding-right: 22px;
+        background-color: #444286; /* Color de fondo */
+        color: white;
+        border: none;
+        display: flex; /* Usamos flex para alinear imagen y texto */
+        justify-content: center; /* Centra horizontalmente el contenido */
+        align-items: center; /* Centra verticalmente el contenido */
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        gap: 10px; /* Espacio entre la imagen y el texto */
+        margin-top: 40px;
+    }
 
-        .btn-con-imagen .btn-icon {
-            width: 25%; /* Tamaño de la imagen */
-            /* Tamaño de la imagen */
-        }
+    .btn-con-imagen .btn-icon {
+        width: 25%; /* Tamaño de la imagen */
+        /* Tamaño de la imagen */
+    }
 
-        .btn-con-imagen .btn-text {
-            font-size: 14px; /* Ajusta el tamaño del texto si es necesario */
-            text-align: right;
-            color: white;
-        }
+    .btn-con-imagen .btn-text {
+        font-size: 14px; /* Ajusta el tamaño del texto si es necesario */
+        text-align: right;
+        color: white;
+    }
 </style>
 <body>
     <!-- Contenedor del logo -->
@@ -230,4 +225,22 @@
         });
     </script>
 </body>
+<script>
+    // Definir las imágenes de fondo
+    const backgrounds = [
+        'assets/get-login-background.jpg',
+        'assets/get-login-background1.jpg',
+        'assets/get-login-background3.jpg',
+        'assets/get-login-background4.jpg',
+        'assets/get-login-background5.jpg',
+    ];
+
+    // Seleccionar una imagen aleatoria
+    const randomIndex = Math.floor(Math.random() * backgrounds.length);
+    const randomBackground = backgrounds[randomIndex];
+
+    // Establecer la imagen aleatoria como fondo de la página
+    document.body.style.backgroundImage = `url('${randomBackground}')`;
+</script>
+
 </html>
